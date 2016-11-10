@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+	<head>
+	
+		<title>Forms</title>
+		
+	</head>	
+	
+	<body>
+	
+		<form>
+		
+			<input> 
+			
+			This is a self-closing tag that creates a box to type in. For example:
+			
+			<p>Text box: <input type="text"></p>
+			
+			<p>Check box: <input type="checkbox"></p>
+			
+			You can select as many of these as you like when filling in the form.
+			
+			<p>Radio: <input type="radio"></p>
+			
+			These you can link so that only one can be selected, using the name tag. Eg:
+			
+			<p>Under 18: <input type="radio" name="age"></p>
+			
+			<p>Over 18: <input type="radio" name="age"></p>
+			
+			<p>Drop-down menu:
+				
+				<select>
+				
+					<option>Option One</option>
+					
+					<option>Option Two</option>
+					
+					<option>Option Three</option>
+		
+				</select>
+			
+			</p>
+			
+			And finally a submit button for the form:
+			
+			<p><input type="submit"></p>
+			
+			If you want it to say something other than submit use the value attribute:
+			
+			<p><input type="submit" value="Click me!"></p>
+			
+			You can use the value attribute for most of these form options. 
+			
+			<p>Text box: <input type="text" value="type here"></p>
+			
+			The user will then have to select and delete this text, so instead you could use the placeholder attribute.
+			
+			<p>Text box: <input type="text" placeholder="type here"></p>
+			
+			The grey text disappears when they start typing.
+			
+			You can assign a value to the radio buttons so you can use this information later, to know which they selected.
+			
+			<p>Under 18: <input type="radio" name="age" value="u18"></p>
+			
+			<p>Over 18: <input type="radio" name="age" value="o18"></p>
+			
+			If you want the check-box checked by default:
+			
+			<p>Check box: <input type="checkbox" checked></p>
+			
+			We can also pick which option on thr drop-down menu appears first:
+			
+			<p>Drop-down menu:
+				
+				<select>
+				
+					<option>Option One</option>
+					
+					<option selected>Option Two</option>
+					
+					<option>Option Three</option>
+		
+				</select>
+			
+			</p>
+			
+		</form>
+	
+	</body>
+	
+</html>
