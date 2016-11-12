@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+	<head>
+	
+		<title>Floating</title>
+		
+		<style type="text/css">
+			
+			#first-section {
+				color:blue;
+				background-color:pink;
+				width:200px;
+				float:left;
+			}
+  
+			#second-section{
+				color: #1423BC;
+				background-color: #FC17A3;
+				width:200px;
+				float:left;
+			}
+			
+			.clear-float{
+				clear:both
+			}
+		</style>
+		
+	</head>	
+
+<!--float right aligns it to the right of the page,
+float left is on the left and also removes default 
+margins so there's no gap between the divs.
+Floating the second section left means it follows on 
+from the previous one-->
+
+	<body>
+	
+		<h1>This is a heading</h1>
+		
+		<div id="first-section">
+
+			<p>This is my first paragraph</p>
+			<p>This is my second paragraph</p>
+			<p>This is my third paragraph</p>
+		</div>
+		
+		<div id="second-section">
+			<p>This is my fourth paragraph</p>
+		</div>
+		
+		<p>This fifth paragraph is not floated</p>
+		
+<!-- if you have a section floated left and a section 
+floated right, anything unfloated will appear in the 
+middle and folow the flow of the page. If you 
+specifically want i underneath you can clear the floats
+on a special div like so:-->		
+		
+		<div class="clear-float">
+			<p>This is my sixth paragraph</p>
+		</div>
+
+	</body>
+	
+</html>
